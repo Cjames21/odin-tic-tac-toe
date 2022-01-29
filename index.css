@@ -1,0 +1,62 @@
+:root {
+    --orange: #e27d60;
+    --teal: #85dccb;
+    --tan: #e8a87c;
+    --pink: #c38d9e;
+    --green: #41b3a3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--green);
+}
+
+.flex-container {
+    display:flex;
+    margin-top: 100px;
+}
+
+.container-game {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.game-board {
+    display:flex;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-self: center;
+    margin-right: 80px;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.score-board h1 {
+    color: rgba(0, 0, 0, .6);
+}
+
+.score-board button {
+    background-color: var(--orange);
+    border: none;
+    color: rgba(0,0,0, .6);
+    padding: 8px;
+    font-size: 1.5em;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.game-tile {
+    background-color: var(--pink);
+    border: 1px solid black;
+    width: 198px;
+    height:198px;
+    font-size: 5em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
